@@ -1,4 +1,7 @@
 package com.lambdaschool.solution;
 
-public class AthleteCreation {
+public interface AthleteCreation {
+
+  public void displayAthlete();
+
 }

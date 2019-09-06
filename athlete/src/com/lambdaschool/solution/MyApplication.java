@@ -1,15 +1,17 @@
 package com.lambdaschool.solution;
 
-import com.lambdaschool.initial.Athlete;
+public class MyApplication implements Processor {
 
-public class MyApplication {
-  {
-    private Athlete athlete = new Athlete();
+    private AthleteCreation athlete;
 
-    public void create(String sport)
-    {
+    public MyApplication(AthleteCreation athlete) {
+      this.athlete = athlete;
+    }
+
+    @Override
+    public void displayAthlete() {
       System.out.println("************");
-      athlete.display(sport);
+      athlete.displayAthlete();
       System.out.println("************\n");
     }
 }
